@@ -184,6 +184,12 @@ body {
 	margin: 0;
 }
 
+.page-promo {
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 115px;
+}
+
 .button {
 	font-weight: medium;
 	line-height: 18px;
@@ -404,6 +410,16 @@ body {
 .sorting {
 	display: flex;
 	text-transform: uppercase;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.sort {
+	font-size: 18px;
+	line-height: 18px;
+	color: #000000;
+	width: 365px;
+	padding-right: 40px;
 }
 
 .sorting ul {
@@ -411,20 +427,95 @@ body {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+}
 
+.sorting li {
+	font-size: 14px;
+	line-height: 18px;
+	color: #eeeeee;
+	margin-right: 25px;
 }
 
 .sorting a {
 	text-decoration: none;
-    
+    color: #eeeeee;
+}
+
+.sorting .active {
+	color: #000000;
+}
+
+
+
+.arrow-down {
+    background-image: url("../img/icon-down-dir-sand.svg");
+	background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.arrow-up{
+	background-image: url("../img/icon-up-dir-sand.svg");
+	background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+
+}
+
+.arrow-active {
+	background-image: url("../img/icon-down-dir.svg");
+	background-repeat: no-repeat;
+}
+
+.arrow-up:hover {
+    background-image: url("../img/icon-up-dir-gray.svg");
+	background-repeat: no-repeat;
+}
+
+.arrow-down:hover {
+    background-image: url("../img/icon-down-dir-gray.svg");
+	background-repeat: no-repeat;
+}
+
+.arrow-up:active,
+.arrow-up:focus {
+    background-image: url("../img/icon-up-dir.svg");
+	background-repeat: no-repeat;
+}
+
+.arrow-down:active,
+.arrow-down:focus {
+    background-image: url("../img/icon-down-dir.svg");
+	background-repeat: no-repeat;
 }
 
 .filtering {
 	width: 280px;
 }
 
+.filter-range .cost {
+	padding-top: 40px;
+	padding-bottom: 55px;
+}
+
 .products {
 	padding-left: 130px;
+}
+
+.cite {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cite article{
+    width: 365px;
+    height: 620px;
+    margin-bottom: 35px;
 }
 
 .sedona,
@@ -433,47 +524,32 @@ body {
 	padding-right: 40px; 
 }
 
-.sedona,
-.pink-app,
-.barbershop,
-.plus,
-.kvast,
-.miska {
+
+
+.card {
 	background-image: url("../img/browser.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	background-size: 360px 40px;
 	position: relative;
 }
 
-.sedona:hover,
-.pink-app:hover,
-.barbershop:hover,
-.plus:hover,
-.kvast:hover,
-.miska:hover {
+.card:hover {
 	background-image: url("../img/browser-2.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	background-size: 360px 40px;
 }
 
-.sedona img,
-.pink-app img,
-.barbershop img,
-.plus img,
-.kvast img,
-.miska img
+.card img
  {
 	padding-top: 40px;
+	width: 360px;
 
 }
 
-.sedona div,
-.pink-app div,
-.barbershop div,
-.plus div,
-.kvast div,
-.miska div {
-	width: 365px;
+.card div {
+	width: 360px;
 	padding-right: 80px;
 	padding-left: 80px;
 	padding-top: 30px;
@@ -486,24 +562,8 @@ body {
 	display: none;
 }
 
-.sedona:hover div,
-.pink-app:hover div,
-.barbershop:hover div,
-.plus:hover div,
-.kvast:hover div,
-.miska:hover div {
+.card:hover div {
 	display: block;
-}
-
-.cite {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.cite article{
-    width: 365px;
-    height: 620px;
-    margin-bottom: 35px;
 }
 
 .page-nav ul {
