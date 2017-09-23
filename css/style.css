@@ -54,7 +54,23 @@ body {
 
 .logo {
 	width: 160px;
+	height: 65px;
+	background-image: url("../img/nerds-logo.svg");
+	background-repeat: no-repeat;
 }
+
+.logo:hover {
+	background-image: url("../img/nerds-logo-hover.svg");
+	background-repeat: no-repeat;
+}
+
+.logo:focus,
+.logo:active {
+	background-image: url("../img/nerds-logo-push.svg");
+	background-repeat: no-repeat;
+}
+
+
 
 .main-nav ul {
 	padding: 0;
@@ -79,9 +95,41 @@ body {
 	color: #000000;
 }
 
+.nav-item a:hover {
+	color: #f59ea0;
+}
+
+.nav-item a:focus,
+.nav-item a:active {
+	color: #a6a6a6;
+}
+
+.menu .active {
+	color: #000000;
+	border-bottom: 2px solid #f3b1b3;
+}
+
 .main-nav a {
 	color: #000000;
 	text-decoration: none;
+}
+
+.basket a {
+	position: relative;
+	padding-left: 30px;
+}
+
+.basket a::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+    left: 0px;
+	width: 25px;
+	height: 25px;
+	background-image: url("../img/cart-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	opacity: 0.3;
 }
 
 .promo-slider {
