@@ -396,22 +396,65 @@ body {
 	position: relative;
 }
 
+.html::after {
+	content: "";
+	width: 2px;
+	height: 55px;
+	background-color: #d2d2d2;
+	position: absolute;
+	top: 65px;
+	right: 0;
+}
+
 .shop {
 	background-image: url("../img/barbershop.png");
 	background-repeat: no-repeat;
 	background-position: 30px 60px;
+	position: relative;
+}
+
+.shop::after {
+	content: "";
+	width: 2px;
+	height: 55px;
+	background-color: #d2d2d2;
+	position: absolute;
+	top: 65px;
+	right: 0;
 }
 
 .pink {
 	background-image: url("../img/pink.png");
 	background-repeat: no-repeat;
 	background-position: 30px 60px;
+	position: relative;
+}
+
+.pink::after {
+	content: "";
+	width: 2px;
+	height: 55px;
+	background-color: #d2d2d2;
+	position: absolute;
+	top: 65px;
+	right: 0;
 }
 
 .mishka {
 	background-image: url("../img/mishka.png");
 	background-repeat: no-repeat;
 	background-position: 30px 60px;
+	position: relative;
+}
+
+.mishka::after {
+	content: "";
+	width: 2px;
+	height: 55px;
+	background-color: #d2d2d2;
+	position: absolute;
+	top: 65px;
+	left: -2px;
 }
 
 .main-footer .container {
