@@ -377,6 +377,16 @@ body {
 .partners div {
 	width: 300px;
 	min-height: 180px;
+	opacity: 0.2;
+}
+
+.partners div:hover {
+	opacity: 1;
+}
+
+.partners div:focus,
+.partners div:active {
+	opacity: 0.1;
 }
 
 .html {
@@ -404,6 +414,10 @@ body {
 	background-position: 30px 60px;
 }
 
+.main-footer .container {
+	position: relative;
+}
+
 .map {
 	padding-top: 80px;
 	width: 100%;
@@ -419,8 +433,8 @@ body {
 	width: 320px;
 	height: 312px;
 	background-color: #ffffff;
-	position: relative;
-	bottom: 390px;
+	position: absolute;
+	bottom: 60px;
 	left: 0;
 }
 
