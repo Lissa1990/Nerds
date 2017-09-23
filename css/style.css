@@ -507,8 +507,18 @@ body {
 	justify-content: space-between;
 }
 
-.social li {
+.social-list li {
 	background-color: #e1e1e1;
+	width: 78px;
+	height: 78px;
+	border-radius: 50%;
+	position: relative;
+}
+
+.social-list .item {
+	display: inline-block;
+	vertical-align: baseline;
+	padding: 38px;
 }
 
 .social div {
@@ -518,6 +528,60 @@ body {
 .social a {
 	color: #ffffff;
 	text-decoration: none;
+}
+
+.social-list .social-vk {
+	background-color: #e1e1e1;
+	border-radius: 50%;
+	background-image: url("../img/vk-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	position: absolute;
+}
+
+.social-list .social-fb {
+	background-color: #e1e1e1;
+	border-radius: 50%;
+	background-image: url("../img/fb-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	position: absolute;
+}
+
+.social-list .social-ins {
+	background-color: #e1e1e1;
+	border-radius: 50%;
+	background-image: url("../img/insta-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	position: absolute;
+}
+
+.social-vk:hover,
+.social-fb:hover,
+.social-ins:hover {
+    background-color: #e74246;
+}
+
+.social-vk:focus,
+.social-vk:active {
+	background-color: #d7373b;
+	box-shadow: inset 0 3px 0px 0 #ce585b;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.social-fb:focus,
+.social-fb:active {
+	background-color: #d7373b;
+	box-shadow: inset 0 3px 0px 0 #ce585b;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.social-ins:focus,
+.social-ins:active {
+	background-color: #d7373b;
+	box-shadow: inset 0 3px 0px 0 #ce585b;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .promo-social {
