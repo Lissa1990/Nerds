@@ -41,6 +41,8 @@ body {
 
 .main-header {
     background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
 }
 
 .main-nav {
@@ -48,7 +50,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 20px;
-	padding-bottom: 19px;
+	
 	padding-top: 40px; 
 }
 
@@ -77,15 +79,17 @@ body {
 	margin: 0;
 	list-style: none;
 	display: flex;
+	padding-top: 15px;
 }
 
 .menu {
 	width: 560px;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .basket {
 	width: 160px;
+	justify-content: center;
 }
 
 .nav-item {
@@ -93,6 +97,15 @@ body {
 	font-weight: medium;
 	line-height: 30px;
 	color: #000000;
+	margin-right: 45px;
+}
+
+.nav-item:first-child {
+	margin-left: 60px;
+}
+
+.nav-item:nth-child(3) {
+    margin-left: 5px;
 }
 
 .nav-item a:hover {
@@ -114,9 +127,13 @@ body {
 	text-decoration: none;
 }
 
+.basket .nav-item {
+	margin-left: 90px;
+}
+
 .basket a {
 	position: relative;
-	padding-left: 30px;
+	padding-left: 40px;
 }
 
 .basket a::before {
@@ -141,12 +158,21 @@ body {
 
 .slider-control {
 	position: absolute;
-	bottom: 96px;
+	bottom: 93px;
 	left: 50%;
 	width: 160px;
 	height: 20px;
-	margin-left: -80px;
+	margin-left: -85px;
 	text-align: center;
+}
+
+.slider-control label:first-child {
+	margin-right: 3px;
+	margin-left: 15px;
+}
+
+.slider-control label:last-child {
+	margin-left: 5px;
 }
 
 .promo-slider input[type=radio] {
@@ -201,13 +227,13 @@ body {
 }
 
 .slide-img img {
-	width: 759px;
-	height: 430px;
+	width: 698px;
+	height: 413px;
 }
 
 
 #slide1:checked ~ .slides .slide-img {
-	transform: translate(0);
+	transform: translate(0px);
 }
 
 #slide2:checked ~ .slides .slide-img {
@@ -232,6 +258,29 @@ body {
 	margin: 0;
 }
 
+.capt {
+	width: 515px;
+}
+
+.prg {
+	width: 420px;
+}
+
+.description {
+	padding-top: 78px;
+}
+
+.picture {
+	position: relative;
+	left: -85px;
+	padding-top: 20px;
+}
+
+.paragraph {
+	padding-top: 10px;
+	padding-bottom: 35px;
+}
+
 .page-promo {
 	text-align: center;
 	padding-top: 80px;
@@ -247,7 +296,7 @@ body {
 	text-transform: uppercase;
 	border: 1px solid #fb565a;
 	border-radius: 4px;
-	padding: 15px 50px;
+	padding: 14px 53px;
 }
 
 .button:hover {
@@ -269,11 +318,11 @@ body {
 
 .services {
 	border-bottom: 2px solid #eeeeee;
-	padding-top: 252px;
+	padding-top: 231px;
 	padding-bottom: 80px;
 	background-image: url("../img/illustration-1.png"), url("../img/illustration-2.png"), url("../img/illustration-3.png");
 	background-repeat: no-repeat, no-repeat, no-repeat;
-	background-position: 0px 80px, 400px 80px, 802px 80px;
+	background-position: 20px 80px, 420px 80px, 820px 80px;
 }
 
 .services ul {
@@ -286,7 +335,26 @@ body {
 
 .services li {
     width: 300px;
-    padding-right: 100px;
+    padding: 0;
+    margin: 0;
+    padding-right: 80px;
+    padding-left: 19px;
+}
+
+.services .caption {
+	text-transform: uppercase;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.serv {
+	padding: 0;
+	width: 250px;
+	padding-bottom: 30px;
+}
+
+.services .button {
+	padding: 15px 39px;
 }
 
 .btn-green {
