@@ -228,8 +228,10 @@ body {
 
 .slide-img img {
 	width: 698px;
-	height: 413px;
+	height: 410px;
 }
+
+
 
 
 #slide1:checked ~ .slides .slide-img {
@@ -539,7 +541,7 @@ body {
 .html {
 	background-image: url("../img/htmlacademy.png");
 	background-repeat: no-repeat;
-	background-position: 30px 60px;
+	background-position: 50px 60px;
 	position: relative;
 }
 
@@ -556,7 +558,7 @@ body {
 .shop {
 	background-image: url("../img/barbershop.png");
 	background-repeat: no-repeat;
-	background-position: 30px 60px;
+	background-position: 45px 45px;
 	position: relative;
 }
 
@@ -573,7 +575,7 @@ body {
 .pink {
 	background-image: url("../img/pink.png");
 	background-repeat: no-repeat;
-	background-position: 30px 60px;
+	background-position: 58px 65px;
 	position: relative;
 }
 
@@ -590,7 +592,7 @@ body {
 .mishka {
 	background-image: url("../img/mishka.png");
 	background-repeat: no-repeat;
-	background-position: 30px 60px;
+	background-position: 63px 50px;
 	position: relative;
 }
 
@@ -611,21 +613,28 @@ body {
 .map {
 	padding-top: 80px;
 	width: 100%;
-	height: 420px;
+	height: 415px;
+	overflow: hidden;
+}
+
+.map iframe {
+	width: 100%;
+	border-width: 0;
 }
 
 .map img {
 	width: 100%;
-	height: 420px;
+	height: 415px;
 }
 
 .contact {
-	width: 320px;
-	height: 312px;
+	width: 220px;
+	height: 244px;
 	background-color: #ffffff;
 	position: absolute;
-	bottom: 60px;
-	left: 0;
+	bottom: 55px;
+	left: 18px;
+	padding: 32px 50px;
 }
 
 .contact-title {
@@ -633,6 +642,7 @@ body {
 	line-height: 30px;
 	color: #000000;
 	text-transform: uppercase;
+	
 }
 
 .contact p {
@@ -640,8 +650,25 @@ body {
 	color: #666666;
 }
 
+.contact .adress {
+	width: 205px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+}
+
+.contact .phone {
+	padding-bottom: 35px;
+}
+
+.btn-form {
+	padding: 14px 43px
+
+}
+
 .social {
 	display: flex;
+	margin-top: 70px;
+	margin-left: 20px;
 }
 
 .social ul {
@@ -666,6 +693,10 @@ body {
 	display: inline-block;
 	vertical-align: baseline;
 	padding: 38px;
+}
+
+.social-list .ins {
+	margin-right: 5px;
 }
 
 .social div {
@@ -735,10 +766,18 @@ body {
 	font-size: 36px;
 	line-height: 36px;
 	color: #000000;
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
+	padding-left: 3px;
+	padding-bottom: 10px;
 }
 
 .social-discount {
+	margin: 0;
+	padding: 0;
 	line-height: 22px;
+	padding-left: 3px;
 }
 
 .modal label {
