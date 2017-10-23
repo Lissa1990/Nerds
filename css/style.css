@@ -79,7 +79,7 @@ body {
 	margin: 0;
 	list-style: none;
 	display: flex;
-	padding-top: 15px;
+	padding-top: 20px;
 }
 
 .menu {
@@ -120,6 +120,7 @@ body {
 .menu .active {
 	color: #000000;
 	border-bottom: 2px solid #f3b1b3;
+	padding-bottom: 5px;
 }
 
 .main-nav a {
@@ -129,6 +130,7 @@ body {
 
 .basket .nav-item {
 	margin-left: 90px;
+	margin-top: -5px;
 }
 
 .basket a {
@@ -789,6 +791,15 @@ body {
 .modal textarea::placeholder {
 	line-height: 18px;
 	color: #444444;
+}
+
+.catalog-page .page-promo {
+    padding-bottom: 107px;
+}
+
+.catalog-page .page-promo {
+	padding-top: 77px;
+	padding-right: 5px;
 }
 
 .catalog {
